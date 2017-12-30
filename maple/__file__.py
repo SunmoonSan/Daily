@@ -15,3 +15,4 @@ l = data.split('。')
 for i in l:
     print(i)
 
+file.close() # 关闭文件
