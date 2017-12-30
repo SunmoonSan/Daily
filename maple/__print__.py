@@ -22,6 +22,5 @@ for i in range(1, 10):
         print(st, end='')
     print('\n')
     file.writelines('\n')
-
-
+file.close()
 
