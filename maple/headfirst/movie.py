@@ -21,6 +21,7 @@ def print_lol(array, indent=False, level=0):
 
 """
 
+
 def print_lol(array, indent=False, level=0):
     """
     将列表中的每个数据都递归打印出来
