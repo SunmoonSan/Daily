@@ -43,4 +43,5 @@ def search(name):
     return False
 
 
+# 调用图查找算法，从‘you’开始查起
 search('you')
