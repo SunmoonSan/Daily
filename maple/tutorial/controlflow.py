@@ -91,6 +91,7 @@ for num in range(2, 10):
         continue
     print(num)
 
+
 # 5.pass语句
 class MyEmptyClass:
     pass
@@ -108,5 +109,4 @@ def fib(n):
         a, b = b, a+b
     print()
 
-    
 print(fib(200))
