@@ -23,6 +23,7 @@ print('*'*50)
 data = ['ACME', 50, 91.1]
 print(','.join(str(d) for d in data))
 
+
 print('*'*50)
 a = 'a'
 b = 'b'

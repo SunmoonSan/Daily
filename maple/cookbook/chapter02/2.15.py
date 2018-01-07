@@ -6,6 +6,7 @@ print('-'*50)
 
 # 如果要被替换的变量能在变量域中找到，
 # 那么你可以结合使用 format_map() 和 vars()
+
 name = 'Guido'
 n = 37
 print(s.format_map(vars()))  # 很奇怪的用法

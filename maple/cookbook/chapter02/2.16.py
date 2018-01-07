@@ -20,6 +20,6 @@ print(textwrap.fill(s, 40, initial_indent='  ', subsequent_indent='    '))
 print('-'*50)
 
 # import os
-#
+
 # print(os.get_terminal_size())
 
