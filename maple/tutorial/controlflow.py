@@ -109,4 +109,21 @@ def fib(n):
         a, b = b, a+b
     print()
 
+
 print(fib(200))
+
+f = fib  # 函数赋值給变量
+print(f(100))
+
+
+def fib2(n):
+    result = []
+    a, b = 0, 1
+    while a < n:
+        result.append(a)
+        a, b = b, a+b
+    return result
+
+
+f300 = fib2(300)  # 有返回值
+print(f300)
