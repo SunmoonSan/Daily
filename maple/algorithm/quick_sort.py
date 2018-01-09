@@ -26,7 +26,7 @@ def quick_sort(array):
         pivot = array[0]
         less = [i for i in array[1:] if i<=pivot]
         greater = [i for i in array[1:] if i>pivot]
-    return less + [pivot] + greater
+    return quick_sort(less) + [pivot] + quick_sort(greater)
 
 
 data0 = [2, 1, 5, 3, 7, 6]
