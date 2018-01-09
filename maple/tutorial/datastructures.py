@@ -158,3 +158,63 @@ print(a^b)
 # 列表表达式， 集合形式
 s = {x for x in 'abracadabra' if x not in 'abc'}
 print(s)
+
+
+tel = {'jack':400, 'sape': 4139}
+tel['guido'] = 4127
+
+print(tel)
+print(tel['jack'])
+del tel['sape']
+tel['irv'] = 4127
+print(tel)
+print(list(tel.keys()))
+print('guido' in tel)
+print('jack' not in tel)
+print(dict([('sape', 4139), ('guido', 4127), ('jack', 4098)]))
+
+s = {x: x**2 for x in (2,4,6)}
+print(s)
+print(dict(sape=4139, guido=4127, jack=4098))
+
+# 字典遍历
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k,v in knights.items():
+    print(k, v)
+
+for i,v in enumerate(['tic', 'tac', 'toe']):
+    print(i, v)
+
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q,a in zip(questions, answers):
+    print('What is your {0} ? It is {1}.'.format(q,a))
+
+for i in reversed(range(1, 10, 2)):
+    print(i)
+
+basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+for f in sorted(set(basket)):
+    print(f)
+
+words = ['cat', 'window', 'defenestrte']
+for w in words[:]:
+    if len(w) > 6:
+        words.insert(0, w)
+
+print(words)
+
+
+strings1, strings2, strings3 = '', 'Trondheim', 'Hammer Dance'
+non_null = strings1 or strings2 or strings3
+print(non_null)
+
+print('-'*60)
+
+print((1,2,3) < (1,2,4))
+print([1,2,3] < [1,2,4])
+print('ABC' < 'C' < 'Pascal' < 'Python')
+print((1,2,3,4) < (1,2,4))
+print((1,2) < (1,2,-1))  # 不好理解
+print((1,2,3) == (1.0, 2.0, 3.0))
+print((1, 2, ('aa', 'ab')) < (1, 2, ('abc', 'a'), 4))  # 不好理解
