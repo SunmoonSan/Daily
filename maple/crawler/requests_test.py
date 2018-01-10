@@ -1,4 +1,3 @@
-
 import requests
 
 URL_IP = 'http://httpbin.org/ip'
