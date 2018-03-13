@@ -20,6 +20,7 @@ obj = B()
 print(obj.__class__)
 obj.show()
 
+
 # 调用A类show()方法
 obj.__class__ = A # 将A的类对象赋值给A
 # obj = A()
